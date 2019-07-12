@@ -33,7 +33,6 @@ async function getRandomAvice() {
         })
         .then(async function getData(data) {
             let advice = data.slip.advice;
-            let that = this;
 
             // Check for proper length
             if (advice.split(' ').length < 15) {
